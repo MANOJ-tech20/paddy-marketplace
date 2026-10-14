@@ -137,3 +137,49 @@ footer p {
         width: 90%;
     }
 }
+/* Farmer submission form */
+#farmer-form {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5fff5;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+}
+
+#farmer-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+#farmer-form input,
+#farmer-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#farmer-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#farmer-form button:hover {
+  background-color: #1b5e20;
+}
+
+#form-message {
+  text-align: center;
+  color: #2e7d32;
+  font-weight: bold;
+}
