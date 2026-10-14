@@ -1,4 +1,3 @@
-
 name: Paddy Market Website Check
 
 on:
@@ -20,4 +19,9 @@ jobs:
           test -f index.html
           test -f style.css
           test -f script.js
-          echo "All Paddy Market website files exist!"
+          echo "All website files exist!"
+
+      - name: Validate HTML
+        uses: html-validate/validate-action@v2
+        with:
+          files: "index.html"
