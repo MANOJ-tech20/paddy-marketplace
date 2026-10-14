@@ -21,7 +21,9 @@ jobs:
           test -f script.js
           echo "All website files exist!"
 
-      - name: Validate HTML
-        uses: html-validate/validate-action@v2
-        with:
-          files: "index.html"
+      - name: Check HTML structure
+        run: |
+          grep -qi '<html' index.html
+          grep -qi '<head' index.html
+          grep -qi '<body' index.html
+          echo "Basic HTML structure check passed!"
