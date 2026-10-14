@@ -1,108 +1,211 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paddy Market</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paddy Market - Shop quality seeds, grains and agricultural products.">
+  <title>Paddy Market | Your Farming Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#products">Paddy Products</a>
-    <a href="#farmer-contact">For Farmers</a>
-</nav>
+  <div class="top-bar">
+    🌾 Your trusted agricultural marketplace
+    <span>Quality products for every farmer</span>
+  </div>
 
-    <h1>Welcome to Paddy Market</h1>
-    <p>Connecting Farmers with Buyers</p>
+  <header class="main-header">
+    <a class="logo" href="#">🌾 Paddy<span>Market</span></a>
 
-    <h2 id="products">Available Paddy Products</h2>
+    <form id="search-form" class="search-box">
+      <input id="search-input" type="search"
+        placeholder="Search seeds, rice, fertilizers..." aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
 
-    
-<input
-    type="text"
-    id="paddySearch"
-    placeholder="Search paddy varieties or villages..."
->
+    <button id="account-button" class="header-link" type="button">👤 Account</button>
+    <button id="cart-button" class="header-link" type="button">
+      🛒 Cart <span id="cart-count">0</span>
+    </button>
+  </header>
 
-<button type="button" id="clearSearch">
-    Clear Search
-</button>
+  <nav class="category-nav" aria-label="Product categories">
+    <a href="#products" data-category="All">All Products</a>
+    <a href="#products" data-category="Seeds">Seeds</a>
+    <a href="#products" data-category="Paddy">Paddy & Rice</a>
+    <a href="#products" data-category="Pulses">Pulses</a>
+    <a href="#products" data-category="Vegetable Seeds">Vegetable Seeds</a>
+    <a href="#products" data-category="Fertilizers">Fertilizers</a>
+    <a href="#products" data-category="Tools">Farm Tools</a>
+  </nav>
 
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">GROW BETTER. HARVEST MORE.</p>
+        <h1>Everything Your Farm Needs, In One Place</h1>
+        <p>Explore seeds, grains and farming essentials for your next harvest.</p>
+        <a href="#products" class="primary-button">Shop Products →</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">🌾 🌱 🌾</div>
+    </section>
 
-    <div class="product">
-        <h3>Sona Masuri</h3>
-        <p>Price: ₹2,800 per quintal</p>
-        <p>Quantity: 50 quintals</p>
-        <p>Location: Jalibenchi</p>
-        
-<a href="https://wa.me/919148368820" target="_blank" rel="noopener noreferrer">
-    Contact Farmer on WhatsApp
-</a>
+    <section class="benefits" aria-label="Shopping benefits">
+      <article>🚚 <strong>Delivery options</strong><span>Check availability at checkout</span></article>
+      <article>🌱 <strong>Crop varieties</strong><span>Explore different seed types</span></article>
+      <article>🤝 <strong>Farmer friendly</strong><span>Made for farming needs</span></article>
+      <article>🔒 <strong>Safer shopping</strong><span>Clear product information</span></article>
+    </section>
 
+    <section class="category-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE THE STORE</p>
+          <h2>Shop by Category</h2>
+        </div>
+      </div>
 
+      <div class="category-grid">
+        <button class="category-card" data-category="Seeds"><span>🌱</span>Seeds</button>
+        <button class="category-card" data-category="Paddy"><span>🌾</span>Paddy & Rice</button>
+        <button class="category-card" data-category="Pulses"><span>🫘</span>Pulses</button>
+        <button class="category-card" data-category="Vegetable Seeds"><span>🥬</span>Vegetable Seeds</button>
+        <button class="category-card" data-category="Fertilizers"><span>🪴</span>Fertilizers</button>
+        <button class="category-card" data-category="Tools"><span>🧑‍🌾</span>Farm Tools</button>
+      </div>
+    </section>
+
+    <section id="products" class="shop-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR NEXT HARVEST</p>
+          <h2>Explore Agricultural Products</h2>
+          <p id="results-count">Browse our catalogue</p>
+        </div>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filters">
+          <h3>Filter Products</h3>
+
+          <label for="category-filter">Category</label>
+          <select id="category-filter">
+            <option value="All">All categories</option>
+            <option value="Seeds">Seeds</option>
+            <option value="Paddy">Paddy & Rice</option>
+            <option value="Pulses">Pulses</option>
+            <option value="Vegetable Seeds">Vegetable Seeds</option>
+            <option value="Fertilizers">Fertilizers</option>
+            <option value="Tools">Farm Tools</option>
+          </select>
+
+          <label for="price-filter">Maximum price (₹)</label>
+          <input id="price-filter" type="number" min="0" placeholder="Any price">
+
+          <label for="crop-filter">Crop / variety contains</label>
+          <input id="crop-filter" type="text" placeholder="e.g. BPT">
+
+          <label for="sort-filter">Sort by</label>
+          <select id="sort-filter">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+          </select>
+
+          <button id="clear-filters" class="secondary-button" type="button">
+            Clear Filters
+          </button>
+        </aside>
+
+        <div id="product-grid" class="product-grid" aria-live="polite">
+          <p>Loading products...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="farmer-banner">
+      <div>
+        <p class="eyebrow">FOR FARMERS & SELLERS</p>
+        <h2>Have products to sell?</h2>
+        <p>Submit your product details to get started. This demo form does not publish listings online.</p>
+      </div>
+
+      <form id="farmer-form" class="farmer-form">
+        <label for="farmer-name">Your name</label>
+        <input id="farmer-name" type="text" required placeholder="Enter your name">
+
+        <label for="farmer-phone">Mobile number</label>
+        <input id="farmer-phone" type="tel" required pattern="[0-9]{10}"
+          placeholder="10-digit mobile number">
+
+        <label for="paddy-variety">Product or variety</label>
+        <input id="paddy-variety" type="text" required placeholder="e.g. BPT paddy">
+
+        <label for="paddy-price">Price per unit (₹)</label>
+        <input id="paddy-price" type="number" min="1" required placeholder="Enter price">
+
+        <button type="submit" class="primary-button">Submit Product Details</button>
+        <p id="form-message" role="status"></p>
+      </form>
+    </section>
+
+    <section id="feedback" class="feedback-section">
+      <p class="eyebrow">HELP US IMPROVE</p>
+      <h2>Share Your Feedback</h2>
+      <p>Tell us how we can make Paddy Market more useful for you.</p>
+
+      <form id="feedback-form" class="feedback-form">
+        <label for="feedback-name">Name (optional)</label>
+        <input id="feedback-name" type="text" placeholder="Your name">
+
+        <label for="feedback-rating">Your rating</label>
+        <select id="feedback-rating" required>
+          <option value="">Choose a rating</option>
+          <option value="5">★★★★★ - Excellent</option>
+          <option value="4">★★★★ - Good</option>
+          <option value="3">★★★ - Average</option>
+          <option value="2">★★ - Needs improvement</option>
+          <option value="1">★ - Poor</option>
+        </select>
+
+        <label for="feedback-message">Your feedback</label>
+        <textarea id="feedback-message" rows="4" required
+          placeholder="Write your suggestions..."></textarea>
+
+        <button class="primary-button" type="submit">Submit Feedback</button>
+        <p id="feedback-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#">🌾 Paddy<span>Market</span></a>
+    <p>A demonstration agricultural marketplace project.</p>
+    <p>Product prices and availability must be verified with sellers.</p>
+    <a href="#feedback">Feedback</a>
+  </footer>
+
+  <button id="chat-toggle" class="chat-toggle" type="button"
+    aria-label="Open shopping assistant">💬 Help</button>
+
+  <section id="chat-panel" class="chat-panel" hidden aria-label="Shopping assistant">
+    <div class="chat-header">
+      <strong>Paddy Market Assistant</strong>
+      <button id="chat-close" type="button" aria-label="Close chat">✕</button>
     </div>
-
-    <div class="product">
-        <h3>BPT Paddy</h3>
-        <p>Price: ₹2,600 per quintal</p>
-        <p>Quantity: 30 quintals</p>
-        <p>Location: Shorapur</p>
+    <div id="chat-messages" class="chat-messages" aria-live="polite">
+      <p class="bot-message">Hello! Ask me about searching products, filters or using your cart.</p>
     </div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" required
+        placeholder="Ask a question..." aria-label="Chat message">
+      <button type="submit">Send</button>
+    </form>
+    <p class="chat-note">Automated demo assistant; not agricultural or medical advice.</p>
+  </section>
 
-    <div class="product">
-        <h3>IR64 Paddy</h3>
-        <p>Price: ₹2,200 per quintal</p>
-        <p>Quantity: 100 quintals</p>
-        <p>Location: Yadgir</p>
-    
-
-<a href="https://wa.me/919148368820" target="_blank" rel="noopener noreferrer">
-    Contact Farmer on WhatsApp
-</a>
-
-
-    </div>
-    
-<section class="contact-section" id="farmer-contact">
-    <h2>Are You a Paddy Farmer? Join Our Marketplace!</h2>
-    <p>List your paddy and connect with buyers.</p>
-    <p>Contact us to get started.</p>
-    <form id="farmer-form">
-  <label for="farmer-name">Farmer Name</label>
-  <input type="text" id="farmer-name" required>
-
-  <label for="farmer-phone">Mobile Number</label>
-  <input type="tel" id="farmer-phone" required>
-
-  <label for="paddy-variety">Paddy Variety</label>
-  <select id="paddy-variety" required>
-    <option value="">Select variety</option>
-    <option value="Sona Masuri">Sona Masuri</option>
-    <option value="BPT">BPT</option>
-    <option value="IR64">IR64</option>
-  </select>
-
-  <label for="paddy-price">Price per quintal (₹)</label>
-  <input type="number" id="paddy-price" min="1" required>
-
-  <button type="submit">Submit Paddy Details</button>
-</form>
-<p id="form-message"></p>
-    
-<a href="mailto:manoj200402@gmail.com">
-    Email Us
-</a>
-
-</section>
-
-<footer>
-    <p>© 2026 Paddy Market | Connecting Farmers with Buyers</p>
-</footer>
-
+  <script src="products.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+```
