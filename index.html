@@ -72,6 +72,27 @@
     <h2>Are You a Paddy Farmer? Join Our Marketplace!</h2>
     <p>List your paddy and connect with buyers.</p>
     <p>Contact us to get started.</p>
+    <form id="farmer-form">
+  <label for="farmer-name">Farmer Name</label>
+  <input type="text" id="farmer-name" required>
+
+  <label for="farmer-phone">Mobile Number</label>
+  <input type="tel" id="farmer-phone" required>
+
+  <label for="paddy-variety">Paddy Variety</label>
+  <select id="paddy-variety" required>
+    <option value="">Select variety</option>
+    <option value="Sona Masuri">Sona Masuri</option>
+    <option value="BPT">BPT</option>
+    <option value="IR64">IR64</option>
+  </select>
+
+  <label for="paddy-price">Price per quintal (₹)</label>
+  <input type="number" id="paddy-price" min="1" required>
+
+  <button type="submit">Submit Paddy Details</button>
+</form>
+<p id="form-message"></p>
     
 <a href="mailto:manoj200402@gmail.com">
     Email Us

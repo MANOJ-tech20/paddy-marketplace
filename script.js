@@ -26,3 +26,18 @@ clearButton.addEventListener("click", function () {
         product.style.display = "block";
     });
 });
+const farmerForm = document.getElementById("farmer-form");
+
+if (farmerForm) {
+  farmerForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const farmerName = document.getElementById("farmer-name").value;
+    const message = document.getElementById("form-message");
+
+    message.textContent =
+      "Thank you, " + farmerName + "! Your form was submitted successfully.";
+
+    farmerForm.reset();
+  });
+}
