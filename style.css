@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f7ed;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #216b38;
+    color: white;
+    padding: 30px;
+    margin: 0;
+}
+
+p {
+    color: #333333;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #216b38;
+    margin-top: 35px;
+}
+
+div {
+    background-color: white;
+    border: 1px solid #d5e2ce;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 350px;
+    box-shadow: 0 3px 8px #00000015;
+}
+
+h3 {
+    color: #216b38;
+}
+
+input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 15px;
+    border: 2px solid #216b38;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #d5e2ce;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 350px;
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.product a {
+    display: inline-block;
+    background-color: #218838;
+    color: white;
+    padding: 10px 14px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.product a:hover {
+    background-color: #176b2a;
+}
+
+.contact-section {
+    background-color: #e0edcf;
+    padding: 30px 15px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 700px;
+}
+
+.contact-section h2 {
+    color: #216b38;
+}
+
+.contact-section a {
+    display: inline-block;
+    background-color: #216b38;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.contact-section a:hover {
+    background-color: #174d28;
+}
+.navbar {
+    background-color: #174d28;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #174d28;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .product {
+        width: 85%;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    input {
+        box-sizing: border-box;
+        width: 90%;
+    }
+}
