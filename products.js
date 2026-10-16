@@ -1,4 +1,4 @@
-```javascript
+
 const products = [
   {
     id: 1,
@@ -181,4 +181,7 @@ const products = [
     description: "Reusable gardening gloves."
   }
 ];
-```
+
+if (typeof module !== "undefined") {
+  module.exports = products;
+}
