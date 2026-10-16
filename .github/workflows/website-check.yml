@@ -40,3 +40,6 @@ jobs:
           node --check script.js
           node --check products.js
           echo "JavaScript syntax checks passed!"
+
+      - name: Run automated product tests
+        run: node --test tests/products.test.js
