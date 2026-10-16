@@ -1,3 +1,4 @@
+
 name: Paddy Market Website Check
 
 on:
@@ -14,11 +15,17 @@ jobs:
       - name: Download project code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Check website files
         run: |
           test -f index.html
           test -f style.css
           test -f script.js
+          test -f products.js
           echo "All website files exist!"
 
       - name: Check HTML structure
@@ -27,3 +34,9 @@ jobs:
           grep -qi '<head' index.html
           grep -qi '<body' index.html
           echo "Basic HTML structure check passed!"
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check script.js
+          node --check products.js
+          echo "JavaScript syntax checks passed!"
