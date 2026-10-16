@@ -43,3 +43,8 @@ jobs:
 
       - name: Run automated product tests
         run: node --test tests/products.test.js
+      - name: Install HTMLHint
+        run: npm install --global htmlhint
+
+      - name: Validate HTML
+        run: htmlhint index.html
