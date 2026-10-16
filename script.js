@@ -1,4 +1,4 @@
-```javascript
+
 const productGrid = document.getElementById("product-grid");
 const searchForm = document.getElementById("search-form");
 const searchInput = document.getElementById("search-input");
@@ -219,4 +219,3 @@ document.getElementById("chat-form").addEventListener("submit", (event) => {
 });
 
 renderProducts();
-```
