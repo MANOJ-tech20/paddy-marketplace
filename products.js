@@ -8,6 +8,7 @@ const products = [
     price: 1200,
     unit: "10 kg bag",
     emoji: "🌾",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
     description: "Popular fine-grain rice variety."
   },
   {

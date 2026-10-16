@@ -55,7 +55,11 @@ function renderProducts() {
 
   productGrid.innerHTML = filtered.map((product) => `
     <article class="product-card">
-      <div class="product-image">${product.emoji}</div>
+<div class="product-image">
+  ${product.image
+    ? `<img src="${product.image}" alt="${product.name}" loading="lazy">`
+    : product.emoji}
+</div>
       <div class="product-info">
         <span class="product-category">${product.category}</span>
         <h3>${product.name}</h3>
