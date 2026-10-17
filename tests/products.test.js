@@ -3,8 +3,8 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const products = require('../products.js');
 
-test('Paddy Market should contain 18 products', () => {
-  assert.equal(products.length, 18);
+test('Paddy Market should contain 24 products', () => {
+  assert.equal(products.length, 24);
 });
 
 test('Every product should have a name and price', () => {

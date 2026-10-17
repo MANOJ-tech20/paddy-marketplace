@@ -8,7 +8,8 @@ const products = [
     price: 1200,
     unit: "10 kg bag",
     emoji: "🌾",
-image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",    description: "Popular fine-grain rice variety."
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
+    description: "Popular fine-grain rice variety."
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 1350,
     unit: "10 kg bag",
     emoji: "🌾",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80",
     description: "BPT variety for suitable growing conditions."
   },
   {
@@ -28,6 +30,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 1100,
     unit: "10 kg bag",
     emoji: "🌾",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
     description: "IR64 rice variety."
   },
   {
@@ -38,6 +41,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 850,
     unit: "1 kg pack",
     emoji: "🌽",
+    image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80",
     description: "Maize seeds; check regional suitability."
   },
   {
@@ -48,6 +52,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 650,
     unit: "5 kg bag",
     emoji: "🌾",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
     description: "Wheat seed pack."
   },
   {
@@ -58,6 +63,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 400,
     unit: "2 kg pack",
     emoji: "🌱",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80",
     description: "Finger millet seeds."
   },
   {
@@ -68,6 +74,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 500,
     unit: "2 kg pack",
     emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=600&q=80",
     description: "Green gram seeds."
   },
   {
@@ -78,6 +85,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 600,
     unit: "2 kg pack",
     emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=600&q=80",
     description: "Red gram pigeon pea seeds."
   },
   {
@@ -88,6 +96,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 550,
     unit: "2 kg pack",
     emoji: "🫘",
+    image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=600&q=80",
     description: "Chickpea seed pack."
   },
   {
@@ -98,6 +107,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 180,
     unit: "10 g pack",
     emoji: "🍅",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
     description: "Vegetable seeds; variety subject to stock."
   },
   {
@@ -108,6 +118,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 220,
     unit: "10 g pack",
     emoji: "🌶️",
+    image: "https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=600&q=80",
     description: "Chilli seed pack."
   },
   {
@@ -118,6 +129,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 150,
     unit: "50 g pack",
     emoji: "🥬",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
     description: "Okra vegetable seeds."
   },
   {
@@ -128,6 +140,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 160,
     unit: "10 g pack",
     emoji: "🍆",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
     description: "Brinjal vegetable seeds."
   },
   {
@@ -138,6 +151,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 350,
     unit: "10 kg bag",
     emoji: "🌿",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
     description: "Compost for soil improvement."
   },
   {
@@ -148,6 +162,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 400,
     unit: "10 kg bag",
     emoji: "🪴",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
     description: "Earthworm-produced compost."
   },
   {
@@ -158,6 +173,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 550,
     unit: "1 piece",
     emoji: "🚿",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
     description: "Hand sprayer for garden use."
   },
   {
@@ -168,6 +184,7 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 300,
     unit: "1 piece",
     emoji: "🧑‍🌾",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
     description: "Manual soil cultivation tool."
   },
   {
@@ -178,7 +195,74 @@ image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format
     price: 120,
     unit: "1 pair",
     emoji: "🧤",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80",
     description: "Reusable gardening gloves."
+  },
+  {
+    id: 19,
+    name: "Jowar Seeds",
+    variety: "Sorghum",
+    category: "Seeds",
+    price: 450,
+    unit: "2 kg pack",
+    emoji: "🌾",
+    image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80",
+    description: "Sorghum seeds; check regional suitability."
+  },
+  {
+    id: 20,
+    name: "Sunflower Seeds",
+    variety: "Sunflower",
+    category: "Seeds",
+    price: 350,
+    unit: "500 g pack",
+    emoji: "🌻",
+    image: "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?auto=format&fit=crop&w=600&q=80",
+    description: "Sunflower seed listing."
+  },
+  {
+    id: 21,
+    name: "Groundnut Seeds",
+    variety: "Groundnut",
+    category: "Seeds",
+    price: 700,
+    unit: "2 kg pack",
+    emoji: "🥜",
+    image: "https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=600&q=80",
+    description: "Groundnut seeds; verify the variety before planting."
+  },
+  {
+    id: 22,
+    name: "Cucumber Seeds",
+    variety: "Cucumber",
+    category: "Vegetable Seeds",
+    price: 160,
+    unit: "10 g pack",
+    emoji: "🥒",
+    image: "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?auto=format&fit=crop&w=600&q=80",
+    description: "Cucumber seed listing."
+  },
+  {
+    id: 23,
+    name: "Watermelon Seeds",
+    variety: "Watermelon",
+    category: "Vegetable Seeds",
+    price: 200,
+    unit: "10 g pack",
+    emoji: "🍉",
+    image: "https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=600&q=80",
+    description: "Watermelon seed listing."
+  },
+  {
+    id: 24,
+    name: "Spinach Seeds",
+    variety: "Spinach",
+    category: "Vegetable Seeds",
+    price: 100,
+    unit: "25 g pack",
+    emoji: "🥬",
+    image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80",
+    description: "Spinach seed listing."
   }
 ];
 
